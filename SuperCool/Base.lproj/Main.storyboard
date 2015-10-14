@@ -16,20 +16,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sky-sunset-night-space" translatesAutoresizingMaskIntoConstraints="NO" id="9Rb-NF-pXd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <animations/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceg-jy-O3B">
                                 <rect key="frame" x="20" y="319" width="335" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Make Me Super Cool"/>
+                                <state key="normal" title="Make Me Cool!"/>
+                                <connections>
+                                    <action selector="makeMeNotSoUncool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9cl-bj-tve"/>
+                                </connections>
                             </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="So-Cool" translatesAutoresizingMaskIntoConstraints="NO" id="EfN-eo-YJr">
+                                <rect key="frame" x="20" y="28" width="335" height="199"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="coolBg" destination="9Rb-NF-pXd" id="6lW-0O-P6z"/>
+                        <outlet property="coolLogo" destination="EfN-eo-YJr" id="cIY-Oe-WxP"/>
+                        <outlet property="unCoolButton" destination="ceg-jy-O3B" id="lEm-Qz-9Nj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="379.5" y="305.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="So-Cool" width="602" height="103"/>
+        <image name="sky-sunset-night-space" width="5184" height="3456"/>
+    </resources>
 </document>
